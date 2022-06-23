@@ -3,8 +3,30 @@
 @tailwind utilities;
 
 body {
-    @apply bg-zinc-900 text-zinc-100;
+  @apply bg-gray-900 text-gray-100;
+  -webkit-font-smoothing: antialiased;
 }
+
+// CMS: Content Management System
+/* 
+ * Traz tanto o painel de ADMIN tanto quanto a parte visual do front-end (temas)
+ * Headless CMS (!GraphCMS): Painel de ADMIN (dados fornecidos atraves de uma API REST ou GraphQL)
+ ? React que consome essa API do CMS
+ ? query / mutation 
+    query = buscar dados 
+    mutation = criar, alterar ou deletar dados
+*/
+
+/*   
+  aprendendo a usar query 
+  useEffect( () => {
+    client.query({
+      query: GET_LESSONS_QUERY,
+    }).then(response => {
+      console.log(response.data)
+    })
+  }, []) 
+*/
 
 
 //CMS: Content Management System 
